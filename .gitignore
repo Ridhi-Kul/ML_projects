@@ -1,3 +1,6 @@
+# To prevent any dataset copyright issues
+*.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

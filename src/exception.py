@@ -1,6 +1,6 @@
 # sys: library that will have information about the errors we will handle
 import sys
-import logging
+from logger import logging
 
 def error_message_detail(error, error_detail:sys): # error detail will be present inside sis
     _, _, exc_tb = error_detail.exc_info() # return type of sis gives 3 info, first 2 are irrelevant
@@ -19,4 +19,3 @@ class CustomException(Exception):
         return self.error_message
     
 ## Whenever using try in any module, inside catch we can raise this custom exception that we just created
-    
